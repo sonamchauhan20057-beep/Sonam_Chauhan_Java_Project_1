@@ -44,14 +44,14 @@ public class Main {
 
         BankAccount[] accounts = new BankAccount[n];
 
-        // Initial balance input
+        
         for (int i = 0; i < n; i++) {
             System.out.print("Enter INITIAL BALANCE for Account " + (i + 1) + ": ");
             double bal = sc.nextDouble();
             accounts[i] = new BankAccount(bal);
         }
 
-        // Show initial balances
+    
         System.out.println("\n--- Initial Balances ---");
         for (int i = 0; i < n; i++) {
             System.out.println("Account " + (i + 1) + ": " + accounts[i].getBalance());
